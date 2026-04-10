@@ -16,5 +16,7 @@
 #ifndef DB_IMPL_H
 #define DB_IMPL_H
 
+int findValue(Table *table, int size, char *value);
+int addValue(Table **table, int *size, char *value);
 
 #endif

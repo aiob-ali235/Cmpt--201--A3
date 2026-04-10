@@ -1,0 +1,18 @@
+Testing Strategy:
+
+1. Tested importDB with small CSV file
+   - checked if program loads without crashing
+
+2. Tested countEntries
+   - counted known values
+
+3. Tested sortByMember
+   - verified output order manually
+
+4. Tested exportDB
+   - checked if file is created
+
+5. Tested memory
+   - ensured program exits without crashing
+
+This testing is enough because it checks all main features.

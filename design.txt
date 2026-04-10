@@ -1,0 +1,29 @@
+we used dynamic arrays to store all tables.
+
+There are 4 lookup tables:
+- tableType
+- surfaceMaterial
+- structuralMaterial
+- neighbourhood
+
+And one main table:
+- picnicTable
+
+Each lookup table stores unique values with an ID.
+The main table stores IDs instead of strings.
+
+This helps reduce memory and makes searching faster.
+
+While reading the CSV file, I:
+- read each line once
+- checked if value exists in lookup table
+- added it if not
+- stored the ID in main table
+
+Problems:
+- parsing CSV correctly
+- managing dynamic memory
+
+Solutions:
+- used strtok for parsing
+- used malloc and realloc for memory
