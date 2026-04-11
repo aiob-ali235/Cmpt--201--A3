@@ -39,7 +39,7 @@ $(TEST): $(TEST_SRC)
 # clean files
 # =========================
 clean:
-	rm -f $(MAIN) $(TEST) *.o *.csv *.bin
+	rm -f $(MAIN) $(TEST) *.o out.csv test_output.csv PicnicTable.bin empty.csv
 
 # =========================
 # create submission archive

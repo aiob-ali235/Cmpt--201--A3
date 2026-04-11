@@ -1,17 +1,11 @@
 /* DB_impl.h
  *
- * For any "private"  declarations that should not be visible to the public
- * users of the database, but might want to be shared across various source
- * files in database implementation.
- * 
- * It is a common convention to append "_impl" to a private implementation of
- * some public interface, so we do so here.
+ * This file contains private helper function declarations
+ * used by the database implementation.
  *
- * Author: <TODO: Group Member Names>
- * Lab instructor: <TODO: Your lab instructor's name here>
- * Lecture instructor: <TODO: Your lecture instructor's name here>
+ * Authors: Almoatassem Namroush, Aiob Ali, Kunwar Mahajan
+ * Lab instructor: Ardy
  */
-
 
 #ifndef DB_IMPL_H
 #define DB_IMPL_H

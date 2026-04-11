@@ -1,11 +1,11 @@
 /* DB_impl.c
  *
- * TODO: Provide a high-level description of what is contained
- * in this file.
+ * This file contains helper functions used by the database.
+ * It includes functions for searching and adding values
+ * to lookup tables.
  *
- * Author: <TODO: Group Member Names>
- * Lab instructor: <TODO: Your lab instructor's name here>
- * Lecture instructor: <TODO: Your lecture instructor's name here>
+ * Authors: Almoatassem Namroush, Aiob Ali, Kunwar Mahajan
+ * Lab instructor: Ardy
  */
 
 #include <stdio.h>
@@ -26,7 +26,8 @@ int addValue(Table **table, int *size, char *value){
     int id = *size;
     *table = realloc(*table, (*size + 1)*sizeof(Table));
     (*table)[*size].id = id;
-    (*table)[*size].value = strdup(value);
+    (*table)[*size].value = malloc(strlen(value) + 1);
+    strcpy((*table)[*size].value, value);
     (*size)++;
     return id;
 }
